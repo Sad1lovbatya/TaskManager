@@ -1,21 +1,14 @@
 FactoryBot.define do
-  sequence :name do |n|
-    "name#{n}"
+  sequence :mail do |n|
+    "person#{n}@example.com"
   end
   
-  sequence :author_id do |n|
-    "author_id #{n}"
-  end
-
-  sequence :assignee_id do |n|
-    "assignee_id#{n}"
-  end
-
-  sequence :state do |n|
-    "state#{n}"
-  end
-
-  sequence :description do |n|
+  sequence (:name, aliases: [:first_name, :last_name, :password, :avatar, :type ]) do |n|
+    "string#{n}"
+  end 
+  
+  sequence :expired_at do |n|
     "date#{n}"
   end
+
 end
