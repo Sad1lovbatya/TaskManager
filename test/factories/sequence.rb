@@ -3,9 +3,9 @@ FactoryBot.define do
       "person#{n}@example.com"
     end
   
-    sequence (:name, aliases: [:first_name, :last_name, :password, :avatar, :type ]) do |n|
+    sequence(:name, aliases: %i[first_name last_name password avatar type]) do |n|
       "string#{n}"
-    end 
+    end
   
     sequence :expired_at do |n|
       "date#{n}"
