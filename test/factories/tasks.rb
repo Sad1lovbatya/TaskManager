@@ -4,6 +4,7 @@ FactoryBot.define do
     description 
     author_id 
     assignee_id 
+    author { create :user }
     state 
     expired_at 
   end
