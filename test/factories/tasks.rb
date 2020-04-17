@@ -4,6 +4,6 @@ FactoryBot.define do
     description   
     author { nil }
     assigne { nil }
-    expired_at  
+    expired_at
   end
 end

@@ -1,7 +1,5 @@
 class CreateUsers < ActiveRecord::Migration[6.0]
   def change
-    add_index :users, :email, unique: true
-    
     create_table :users do |t|
       t.string :first_name
       t.string :last_name
@@ -10,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :avatar
       t.string :type
 
-      t.timestamps
+      t.timestamps 
     end
   end
 end
