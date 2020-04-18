@@ -5,10 +5,10 @@ FactoryBot.define do
     author { nil }
     assignee { nil }
     expired_at
-    trait :author do
+    trait :have_author do
       author
     end
-    trait :assignee do
+    trait :have_assignee do
       assignee
     end
   end
