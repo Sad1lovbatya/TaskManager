@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :avatar
       t.string :type
 
-      t.timestamps 
+      t.timestamps
     end
   end
 end

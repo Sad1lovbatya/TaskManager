@@ -1,11 +1,11 @@
 FactoryBot.define do
-  factory :user do
-    first_name  
-    last_name  
-    password   
-    email  
-    avatar  
-    type  
+  factory :user, :author, :assigne do
+    first_name
+    last_name
+    password
+    email
+    avatar
+    type
     trait :admin do
       type { 'Admin' }
     end
