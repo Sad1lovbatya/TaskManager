@@ -7,7 +7,7 @@ FactoryBot.define do
     "string#{n}"
   end
 
-  sequence :expired_at do 
+  sequence :expired_at do
     Time.now
   end
 end
