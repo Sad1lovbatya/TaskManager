@@ -6,17 +6,5 @@ FactoryBot.define do
     email
     avatar
     type
-    trait :admin do
-      type { 'Admin' }
-    end
-    trait :developer do
-      type { 'Developer' }
-    end
-    trait :manager do
-      type { 'Manager' }
-    end
-    factory :users_admin,     traits: [:admin]
-    factory :users_developer, traits: [:developer]
-    factory :users_manager,   traits: [:manager]
   end
 end
