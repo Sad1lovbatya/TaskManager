@@ -4,7 +4,7 @@ FactoryBot.define do
     last_name
     password
     email
-    avatar
-    type 
+    avatar 
+    type { "User" }
   end
 end
