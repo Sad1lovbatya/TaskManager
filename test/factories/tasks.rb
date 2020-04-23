@@ -13,3 +13,4 @@ FactoryBot.define do
     factory :assignee_tasks, traits:[:have_assignee]
   end
 end
+  
