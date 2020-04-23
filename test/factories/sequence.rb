@@ -3,7 +3,7 @@ FactoryBot.define do
     "person#{n}@example.com"
   end
 
-  sequence(:name, aliases: %i[first_name last_name password description avatar]) do |n|
+  sequence(:name, aliases: %i[first_name last_name password avatar]) do |n|
     "string#{n}"
   end
 
