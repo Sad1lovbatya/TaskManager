@@ -14,8 +14,8 @@ FactoryBot.define do
     trait :manager do
       type { 'Manager' }
     end
-    factory :admin_users, traits:[:admin]
-    factory :developer_users, traits:[:developer]
-    factory :manager_users, traits:[:manager]
+    factory :admin, traits:[:admin]
+    factory :developer, traits:[:developer]
+    factory :manager, traits:[:manager]
   end
 end
