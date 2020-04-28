@@ -7,9 +7,7 @@ class Web::DevelopersControllerTest < ActionController::TestCase
   end
 
   test "should post create" do
-
     post :create, params: { developer: attributes_for(:developer) }
     assert_response :redirect
-    byebug
   end
 end
