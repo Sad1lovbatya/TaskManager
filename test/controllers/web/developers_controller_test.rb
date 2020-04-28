@@ -9,8 +9,7 @@ class Web::DevelopersControllerTest < ActionController::TestCase
   test 'should post create' do
     post :create, params: { developer: attributes_for(:developer) }
     assert @developer.blank?
-    assert_response :redirect
-    
+    assert_response :redirect 
   end
 end
  
