@@ -7,8 +7,10 @@ class Web::DevelopersControllerTest < ActionController::TestCase
   end
 
   test 'should post create' do
-    #assert_not_empty(@@developer)
     post :create, params: { developer: attributes_for(:developer) }
+    assert @developer.blank?
     assert_response :redirect
+    
   end
 end
+ 
