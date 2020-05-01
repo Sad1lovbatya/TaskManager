@@ -1,8 +1,5 @@
 FactoryBot.define do
-  factory :developer do
-    first_name
-    last_name
-    password
-    email
+  factory :developer, parent: :user do
+    type { 'Developer' }
   end
 end
