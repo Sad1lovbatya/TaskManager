@@ -9,7 +9,5 @@ FactoryBot.define do
     trait :have_assignee do
       assignee
     end
-    factory :author_task,  traits:[:have_author]
-    factory :assignee_task, traits:[:have_assignee]
   end
 end
