@@ -8,6 +8,6 @@ FactoryBot.define do
   end
   
   sequence :expired_at do
-    Time.current 
+    Time.current
   end
 end
