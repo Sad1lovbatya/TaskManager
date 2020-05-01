@@ -7,4 +7,4 @@ class Admin::UsersController < Admin::ApplicationController
     @q = User.ransack(params[:q])
     @users = @q.result.order(:type).order(:id).page(params[:page]).per(10)
   end
-  end
+end
