@@ -5,17 +5,5 @@ FactoryBot.define do
     password
     email
     avatar
-    trait :admin do
-      type { 'Admin' }
-    end
-    trait :developer do
-      type { 'Developer' }
-    end
-    trait :manager do
-      type { 'Manager' }
-    end
-    factory :admin_user, traits:[:admin]
-    factory :developer_user, traits:[:developer]
-    factory :manager_user, traits:[:manager]
   end
 end
