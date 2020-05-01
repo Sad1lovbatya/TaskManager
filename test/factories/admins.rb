@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :admin, parent: :user  do
+  factory :admin, parent: :user 
     type { 'Admin' }
   end
 end

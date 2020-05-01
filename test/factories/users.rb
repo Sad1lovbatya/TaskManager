@@ -4,6 +4,6 @@ FactoryBot.define do
     last_name
     password
     email
-    avatar
+    avatar 
   end
 end
