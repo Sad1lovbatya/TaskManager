@@ -10,6 +10,6 @@ class TaskSerializer < ApplicationSerializer
         from: transiion.from,
         to: transiion.to
       }
-    end
+   end
   end
 end
