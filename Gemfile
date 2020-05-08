@@ -56,3 +56,9 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'rubocop'
 end
+
+gem 'active_model_serializers'
+gem 'kaminari'
+gem 'ransack', github: 'activerecord-hackery/ransack'
+gem 'responders'
+gem 'slim-rails'
