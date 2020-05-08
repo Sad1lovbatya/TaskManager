@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :user, aliases: [:author, :assignee] do
+  factory :user do
     first_name
     last_name
     password
