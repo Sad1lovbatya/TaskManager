@@ -1,13 +1,13 @@
 FactoryBot.define do
-  sequence :mail do |n|
+  sequence :email do |n|
     "person#{n}@example.com"
   end
 
-  sequence(:name, aliases: %i[first_name last_name password avatar type]) do |n|
+  sequence(:string, aliases: %i[name first_name last_name password avatar description]) do |n|
     "string#{n}"
   end
 
-  sequence :expired_at do |n|
-    "date#{n}"
+  sequence :expired_at do 
+    Time.current
   end
 end
