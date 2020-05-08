@@ -1,21 +1,21 @@
 FactoryBot.define do
-  factory :user, aliases: %i[author assignee] do
+  factory :user, aliases: [:author, :assignee] do
     first_name
     last_name
     password
     email
-    avatar 
+    avatar
 
     factory :developer do
-      type { "Developer" }
+      type { 'Developer' }
     end
 
     factory :manager do
-      type { "Manager" }
+      type { 'Manager' }
     end
 
     factory :admin do
-      type { "Admin" }
+      type { 'Admin' }
     end
   end
 end
