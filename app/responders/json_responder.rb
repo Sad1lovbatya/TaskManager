@@ -8,4 +8,4 @@ class JsonResponder < ActionController::Responder
       super
     end
   end
-  end
+end
