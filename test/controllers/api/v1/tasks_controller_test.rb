@@ -5,6 +5,7 @@ class Api::V1::TasksControllerTest < ActionController::TestCase
     @author = create(:user)
     @assignee = create(:user)
     @task = create(:task, author: @author)
+    sign_in @author
   end
 
   test 'should get show' do
@@ -19,8 +20,6 @@ class Api::V1::TasksControllerTest < ActionController::TestCase
   end
 
   test 'should post create' do
-    author = @author
-    sign_in(author)
     assignee = @assignee
     task_attributes = attributes_for(:task).
       merge({ assignee_id: assignee.id })
